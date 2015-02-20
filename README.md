@@ -18,19 +18,15 @@ Forecast:
 Slack:
 - HUBOT_SLACK_TOKEN
 
-When running from the command line, you should provide name and adapter options:
-
-    % bin/hubot -a slack -n marvin
-
-
+Copy bin/.hubotrc.sample to bin/.hubotrc and fill in values.  Use bin/daemon.sh to run.
 
 ### Running marvin Locally
 
-You can test your hubot by running the following.
+You can test your hubot by running it locally.
 
-You can start marvin locally by running:
+When running marvin from the command line, you may want to provide name and adapter options (or leave off -a slack to test locally):
 
-    % bin/hubot
+    % bin/hubot -a slack -n marvin
 
 You'll see some start up output about where your scripts come from and a
 prompt:
