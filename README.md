@@ -8,6 +8,22 @@ This README is intended to help get you started. Definitely update and improve t
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+## Configuration Settings
+
+Forecast:
+- HUBOT_FORECAST_KEY
+- HUBOT_LAT_LNG  (use 33.792519,-84.323999 for Emory)
+- HUBOT_FORECAST_ROOM (e.g. general for #general slack)
+
+Slack:
+- HUBOT_SLACK_TOKEN
+
+When running from the command line, you should provide name and adapter options:
+
+    % bin/hubot -a slack -n marvin
+
+
+
 ### Running marvin Locally
 
 You can test your hubot by running the following.
