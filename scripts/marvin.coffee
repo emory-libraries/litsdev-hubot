@@ -1,6 +1,10 @@
 # Description:
 #  more quotes from Marvin, the Paranoid Android
 #
+#  modeled on marvin-quotes.coffee from hubot community scripts
+#  quotes from http://www.imdb.com/character/ch0007553/quotes
+#
+#
 # Dependencies:
 #   None
 #
@@ -10,8 +14,6 @@
 # Commands:
 #   hubot how are you?
 #
-#  modeled on marvin-quotes.coffee from hubot community scripts
-#  quotes from http://www.imdb.com/character/ch0007553/quotes
 
 quotes = [
     "I think you ought to know I'm feeling very depressed.",
