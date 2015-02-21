@@ -29,5 +29,5 @@ quotes = [
 
 module.exports = (robot) ->
 
-  robot.hear /how are you\?/, (msg) ->
+  robot.hear /[Hh]ow are you\??/, (msg) ->
     msg.send msg.random quotes
