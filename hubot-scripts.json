@@ -1,1 +1,8 @@
-["marvin-quotes.coffee"]
+[
+    "marvin-quotes.coffee",
+    "pypi.coffee",
+    "python_library.coffee",
+    "update.coffee",
+    "url.coffee",
+    "wolfram.coffee"
+]

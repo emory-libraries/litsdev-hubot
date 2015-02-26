@@ -6,6 +6,8 @@ export HUBOT_SLACK_TOKEN=
 export HUBOT_FORECAST_KEY=
 export HUBOT_LAT_LNG=33.792519,-84.323999
 export HUBOT_FORECAST_ROOM=general
+# wolfram
+export HUBOT_WOLFRAM_APPID=
 
 export HUBOT_PATH=
 
