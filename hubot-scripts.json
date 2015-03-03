@@ -4,5 +4,6 @@
     "python_library.coffee",
     "update.coffee",
     "url.coffee",
-    "wolfram.coffee"
+    "wolfram.coffee",
+    "reload.coffee"
 ]
