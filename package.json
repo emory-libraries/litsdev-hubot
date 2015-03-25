@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "author": "rlskoeser <rebecca.s.koeser@emory.edu>",
+  "contributors":[
+    { 
+      "name" : "Kevin Glover",
+      "email" : "kevin.glover@emory.edu"
+    }
+  ],
   "description": "A simple helpful robot for Emory LITS software developers and sysadmins",
   "dependencies": {
     "hubot": "^2.11.1",
@@ -27,5 +33,22 @@
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emory-libraries/litsdev-hubot.git"
+  },
+  "keywords": [
+    "hubot"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emory-libraries/litsdev-hubot/issues"
+  },
+  "homepage": "https://github.com/emory-libraries/litsdev-hubot"
 }
