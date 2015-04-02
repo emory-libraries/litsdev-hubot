@@ -8,6 +8,9 @@ export HUBOT_LAT_LNG=33.792519,-84.323999
 export HUBOT_FORECAST_ROOM=general
 # wolfram
 export HUBOT_WOLFRAM_APPID=
+# jenkins
+export HUBOT_JENKINS_URL=
+export HUBOT_JENKINS_AUTH=
 
 export HUBOT_PATH=
 

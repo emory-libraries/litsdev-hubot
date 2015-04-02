@@ -1,8 +1,14 @@
 {
   "name": "marvin",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "private": true,
   "author": "rlskoeser <rebecca.s.koeser@emory.edu>",
+  "contributors":[
+    {
+      "name" : "Kevin Glover",
+      "email" : "kevin.glover@emory.edu"
+    }
+  ],
   "description": "A simple helpful robot for Emory LITS software developers and sysadmins",
   "dependencies": {
     "hubot": "^2.11.1",
@@ -12,13 +18,14 @@
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
+    "hubot-jenkins": "^1.0.2",
     "hubot-maps": "0.0.1",
     "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.2",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.2",
-    "hubot-slack": "^3.2.1",
+    "hubot-slack": "^3.3.0",
     "hubot-standup-alarm": "0.0.3",
     "hubot-youtube": "^0.1.2",
     "pypi": "^0.1.2",
@@ -26,5 +33,22 @@
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emory-libraries/litsdev-hubot.git"
+  },
+  "keywords": [
+    "hubot"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emory-libraries/litsdev-hubot/issues"
+  },
+  "homepage": "https://github.com/emory-libraries/litsdev-hubot"
 }
