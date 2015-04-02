@@ -47,7 +47,7 @@ you_mean_response =[
   "I'm just kidding around.",
   "I'm sorry, I didn't mean to.",
   "That was not my intention.",
-  "Hey, I'm just a friendly girl."
+  "Hey, I'm just a friendly guy."
 ]
 
 
