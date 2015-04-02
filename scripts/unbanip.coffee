@@ -6,7 +6,13 @@
 #
 # Notes:
 #   Requires fail2ban-client installed on the machine where hubot is running
-#
+#   Create a shell script with the following contents:
+#       #!/bin/bash
+#       /usr/bin/fail2ban-client set ssh-iptables unbanip $1#
+#   Install the script as /usr/local/bin/hubot-unban-ip-ssh.sh
+#   Give the hubot user nopasswd sudo permission to run that script:
+#      (root) NOPASSWD: /usr/local/bin/hubot-unban-ip-ssh.sh
+
 # Author:
 #   rlskoeser
 
@@ -16,7 +22,8 @@ module.exports = (robot) ->
         ip = msg.match[1]
 
         @exec = require('child_process').exec
-        command = "fail2ban-client set ssh-iptables unbanip #{ip}"
+        # command = "fail2ban-client set ssh-iptables unbanip #{ip}"
+        command = "sudo /usr/local/bin/hubot-unban-ip-ssh.sh #{ip}"
         reply_msg = "Unbanning IP #{ip}... "
         @exec command, (error, stdout, stderr) ->
             if error
