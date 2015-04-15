@@ -1,11 +1,11 @@
 #!/bin/sh
 
 set -e
+HUBOT_BIN_DIR=$(dirname $0)
+HUBOT_ROOT=$HUBOT_BIN_DIR/..
 
 npm install
-
-. bin/.hubotrc
-
+. $HUBOT_BIN_DIR/.hubotrc
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 
-exec node_modules/hubot/bin/hubot "$@"
+exec $HUBOT_ROOT/node_modules/hubot/bin/hubot "$@"
