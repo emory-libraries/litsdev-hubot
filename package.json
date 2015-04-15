@@ -3,11 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "author": "rlskoeser <rebecca.s.koeser@emory.edu>",
-  "contributors":[
-    {
-      "name" : "Kevin Glover",
-      "email" : "kevin.glover@emory.edu"
-    }
+  "contributors": [
+    "Kevin Glover <kevin.glover@emory.edu>"
   ],
   "description": "A simple helpful robot for Emory LITS software developers and sysadmins",
   "dependencies": {
