@@ -20,7 +20,9 @@ How to get up and running so you can contribute to Marvin.
   git flow init
   ```
 
-5. Run marvin locally:
+5. Configure marvin with local settings (lat/long coordinates for forecast, API keys, etc) - copy ``bin/.hubotrc.sample`` to ``bin/.hubotrc`` and fill in the desired values.
+
+6. Run marvin locally:
   ```
   bin/hubot -n marvin
   ```
