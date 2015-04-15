@@ -211,7 +211,10 @@ module.exports = function(robot) {
   robot.respond(/cool/i, function(msg) {
     return msg.send("I think you are cool.");
   });
-  return robot.respond(/good morning/i, function(msg) {
+  robot.respond(/what are you/i, function(msg) {
+    return msg.send("What does it matter?");
+  });
+  robot.respond(/good morning/i, function(msg) {
     return msg.send("What's so good about it?");
   });
 };
