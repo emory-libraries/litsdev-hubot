@@ -1,0 +1,9 @@
+var config = {};
+
+config.ldap = {};
+
+config.ldap.url = "";
+config.ldap.dn = "";
+config.ldap.credentials = "";
+
+module.exports = config;

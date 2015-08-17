@@ -32,7 +32,9 @@
     "node": "0.10.x"
   },
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "ldapjs": "^0.7.1"
+  },
   "scripts": {
     "test": "test"
   },
