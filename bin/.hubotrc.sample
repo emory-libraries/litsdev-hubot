@@ -12,6 +12,13 @@ export HUBOT_WOLFRAM_APPID=
 export HUBOT_JENKINS_URL=
 export HUBOT_JENKINS_AUTH=
 
+# LDAP config
+export HUBOT_LDAP_URL=""
+export HUBOT_LDAP_DN=""
+export HUBOT_LDAP_CREDENTIALS=""
+export HUBOT_LDAP_SEARCH_FILTER=""
+
+
 export HUBOT_PATH=
 
 #---------------- END HUBOT CONFIG --------------------------------

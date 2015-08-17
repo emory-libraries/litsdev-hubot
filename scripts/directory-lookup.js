@@ -9,24 +9,27 @@
 *   ldapjs
 *
 * Configuration:
-*   ldap configuration
+*   HUBOT_LDAP_URL
+*   HUBOT_LDAP_DN
+*   HUBOT_LDAP_CREDENTIALS
+*   HUBOT_LDAP_SEARCH_FILTER
 *
 *
 * Commands:
 *   ldap <search term>
 *
 */
-var config = require('../config/local');
 var ldap = require('ldapjs');
 
 module.exports = function(robot) {
   robot.respond(/ldap(.*)/i, function(msg) {
 
     var client = ldap.createClient({
-      url: config.ldap.url,
-      bindDN: config.ldap.dn,
-      bindCredentials: config.ldap.credentials,
-      maxConnections:2
+      url: process.env.HUBOT_LDAP_URL,
+      bindDN: process.env.HUBOT_LDAP_DN,
+      bindCredentials: process.env.HUBOT_LDAP_CREDENTIALS,
+      maxConnections:2,
+      secure:false
     });
 
     var input = msg.match[1];
@@ -35,7 +38,6 @@ module.exports = function(robot) {
     input = "*"+input+"*";
 
     var opts = {
-      // filter: '((uid='+input+'))',
       filter: '(|(fullName='+input+')(uid='+input+'))',
       scope: 'sub'
     };
@@ -45,7 +47,7 @@ module.exports = function(robot) {
     var d = new Date();
     var time_start = d.getTime();
 
-    client.search("ou=People,dc=emory,dc=edu", opts, function(err, res) {
+    client.search(process.env.HUBOT_LDAP_SEARCH_FILTER, opts, function(err, res) {
         // assert.ifError(err);
         var results = '';
         res.on('searchEntry', function(entry) {
@@ -66,7 +68,7 @@ module.exports = function(robot) {
           var time_end = d.getTime(),
               time_diff = (time_end - time_start) * 0.001;
 
-          results = ['It took me',time_diff,'seconds to look through your entire direcotry and fetch your results.'].join(' ');
+          results = ['It took me',time_diff,'seconds to look through your entire directory and fetch your results.'].join(' ');
           msg.send(results);
         });
       });
